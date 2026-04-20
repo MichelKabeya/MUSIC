@@ -6,7 +6,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
+// added a background image from :
+// https://i.pinimg.com/736x/2f/66/a3/2f66a3a5c54e662cf134b5852e4f0922.jpg
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,12 +16,13 @@ class MainActivity : AppCompatActivity() {
         var songShowTxt = findViewById<TextView>(R.id.songDisplay)
         var songDisplay = " "
         //accessing the song class to populate the song objects with specific attributes
-        var song1= song("Choosin' Texas", "Ella Langley", "3:33",(2020))
-        var song2= song("IceBerg", "John D", "3:00", (2016))
-        var song3= song("falling apart","Helene","2:47", (2029))
-        var song4= song("RageBait", "Lil Junior", "3:23", (2020))
+        var song1= song("Choosin' Texas", "Ella Langley")
+        var song2= song("IceBerg", "John D")
+        var song3= song("falling apart","Helene")
+        var song4= song("", "", 0, "")
+        var song5= song("", "", 2023, "3:28")
         // creating an array to hold the song objects
-        var songs = arrayOf<song>(song1,song2,song3,song4)
+        var songs = arrayOf<song>(song1,song2,song3,song4, song5)
         // for loop to loop through and display songs from the array
         for (song in songs) {
             songDisplay += "${song.DisplaySong()}\n\n"
