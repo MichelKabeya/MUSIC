@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         var song1= song("Choosin' Texas", "Ella Langley")
         var song2= song("IceBerg", "John D")
         var song3= song("falling apart","Helene")
-        var song4= song("", "", 0, "")
-        var song5= song("", "", 2023, "3:28")
+        var song4= song( 2015, "2:57")
+        var song5= song( 2023, "3:28")
         // creating an array to hold the song objects
         var songs = arrayOf<song>(song1,song2,song3,song4, song5)
         // for loop to loop through and display songs from the array
