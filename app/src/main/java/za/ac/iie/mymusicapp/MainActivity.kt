@@ -13,16 +13,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        var songShowTxt = findViewById<TextView>(R.id.songDisplay)
+        val songShowTxt = findViewById<TextView>(R.id.songDisplay)
         var songDisplay = " "
         //accessing the song class to populate the song objects with specific attributes
-        var song1= song("Choosin' Texas", "Ella Langley")
-        var song2= song("IceBerg", "John D")
-        var song3= song("falling apart","Helene")
-        var song4= song( 2015, "2:57")
-        var song5= song( 2023, "3:28")
+        val song1= Song("Choosin' Texas", "Ella Langley", 2026, "2:50")
+        val song2= Song("IceBerg", "John D",  )
+        val song3= Song("falling apart","Helene")
+        val song4= Song("Break it all", 2015, )
+        val song5= Song("The end",2023)
         // creating an array to hold the song objects
-        var songs = arrayOf<song>(song1,song2,song3,song4, song5)
+        val songs = arrayOf(song1,song2,song3,song4, song5)
         // for loop to loop through and display songs from the array
         for (song in songs) {
             songDisplay += "${song.DisplaySong()}\n\n"
