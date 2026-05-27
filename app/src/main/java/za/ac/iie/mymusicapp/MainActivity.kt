@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         var songDisplay = " "
         //accessing the song class to populate the song objects with specific attributes
         val song1= Song("Choosin' Texas", "Ella Langley", 2026, "2:50")
-        val song2= Song("IceBerg", "John D",  )
+        val song2= Song("IceBerg", "John D" )
         val song3= Song("falling apart","Helene")
         val song4= Song("Break it all", 2015, )
         val song5= Song("The end",2023)
